@@ -9,7 +9,7 @@ st.sidebar.header('Product Dashboard')
 # --- LOAD DATAFRAME
 csv_file = 'transformed data - includes adoption, stickiness, and revenue.csv'
 
-df = pd.read_csv(r'c:\Users\5\AppData\Local\Programs\Python\Python311\projects\Otter Scratch Work\Question 2\transformed data - includes adoption, stickiness, and revenue.csv')
+df = pd.read_csv(r'https://raw.githubusercontent.com/jcaothien/streamlit/main/transformed%20data%20-%20includes%20adoption%2C%20stickiness%2C%20and%20revenue.csv')
 
 df['day_partition'] = pd.to_datetime(df['day_partition']).dt.date
 def convert_df(df):
